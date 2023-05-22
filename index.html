@@ -5,20 +5,36 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
+		<script src="./app.js" defer></script>
 		<title>Library</title>
 	</head>
 	<body>
 		<header>
 			<div class="title">Library</div>
-			<button class="addBtn">Add new book</button>
+			<button class="add-book" id="add-book">Add new book</button>
+			<form action="">
+				<fieldset>
+					<legend>
+						<label for="book-title">Title: </label>
+						<input type="text" id="book-title" />
+						<label for="author">Author: </label>
+						<input type="text" id="author" />
+						<label for="number-of-page"> Number of pages:</label>
+						<input type="number" id="number-of-page" />
+						<label for="image-url">Book image address:</label>
+						<input type="url" id="image-url" />
+						<button class="add-to-library" id="add-to-library">add to library</button>
+					</legend>
+				</fieldset>
+			</form>
 		</header>
 		<main>
 			<div class="book-card">
 				<div class="info">
-					<div class="book-tiitle">Title: The Hobbit<span>The Hobbit</span></div>
-					<div class="author">Author: <span>J. R. R. Tolkien</span></div>
-					<div class="number-of-page">Number of pages: <span>576</span></div>
-					<div class="read-status">unread</div>
+					<div>Title: The Hobbit<span id="card-book-title">The Hobbit</span></div>
+					<div>Author: <span id="card-author">J. R. R. Tolkien</span></div>
+					<div>Number of pages: <span id="card-number-of-page">576</span></div>
+					<button class="read-status unread">unread</button>
 				</div>
 				<div class="img">
 					<img

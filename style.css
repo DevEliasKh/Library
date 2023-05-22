@@ -147,7 +147,7 @@ header {
 	font-size: 34px;
 }
 
-.addBtn {
+.add-book {
 	padding: 5px 10px;
 	outline: none;
 	border: none;
@@ -156,7 +156,7 @@ header {
 	box-sizing: border-box;
 }
 
-.addBtn:hover {
+.add-book:hover {
 	border: 1px solid black;
 	font-weight: 800;
 	scale: 1.1;
@@ -186,6 +186,75 @@ main {
 	justify-content: space-around;
 }
 
+.read-status {
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.2ch;
+	border: none;
+	background-color: #fff;
+	text-align: center;
+	padding: 7px;
+	font-size: 16px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.unread {
+	color: red;
+	background-color: rgba(255, 0, 0, 0.2);
+	border: 3px solid rgba(255, 0, 0, 0.2);
+}
+
+.read {
+	color: green;
+	background-color: rgba(0, 255, 0, 0.2);
+	border: 3px solid rgba(0, 255, 0, 0.2);
+}
+
 .img img {
 	height: 100%;
+}
+
+form {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(225, 225, 225, 0.8);
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+
+	visibility: hidden;
+	font-size: 20px;
+}
+
+legend {
+	display: grid;
+	gap: 10px;
+
+	background-color: rgba(147, 197, 253, 0.8);
+	padding: 40px;
+	border-radius: 25px;
+}
+
+input {
+	margin-bottom: 20px;
+	width: 300px;
+	height: 1.5rem;
+	border: 1px solid rgba(225, 225, 225, 0.5);
+	border-radius: 5px;
+}
+
+input:focus {
+	outline: 1px solid gray;
+}
+
+.add-to-library {
+	background-color: #60a5fa;
+	outline: none;
+	border: 1px solid #3b82f6;
+	padding: 10px 0;
+	border-radius: 10px;
 }
