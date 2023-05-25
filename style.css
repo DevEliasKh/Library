@@ -209,6 +209,7 @@ main {
 	color: green;
 	background-color: rgba(0, 255, 0, 0.2);
 	border: 3px solid rgba(0, 255, 0, 0.2);
+	content: 'Read';
 }
 
 .img img {
