@@ -172,7 +172,7 @@ main {
 .book-card {
 	background-color: #f3f4f6;
 	text-align: left;
-	height: 8rem;
+	height: 10em;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -184,6 +184,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	gap: 0.7em;
 }
 
 .read-status {
@@ -205,11 +206,21 @@ main {
 	border: 3px solid rgba(255, 0, 0, 0.2);
 }
 
+.unread:hover {
+	background-color: rgba(255, 0, 0, 0.5);
+	border: 3px solid rgba(255, 0, 0, 0.5);
+}
+
 .read {
 	color: green;
 	background-color: rgba(0, 255, 0, 0.2);
 	border: 3px solid rgba(0, 255, 0, 0.2);
 	content: 'Read';
+}
+
+.read:hover {
+	background-color: rgba(0, 255, 0, 0.5);
+	border: 3px solid rgba(0, 255, 0, 0.5);
 }
 
 .img img {
@@ -258,4 +269,14 @@ input:focus {
 	border: 1px solid #3b82f6;
 	padding: 10px 0;
 	border-radius: 10px;
+}
+
+.remove {
+	border: 3px solid #4b5563;
+}
+
+.remove:hover {
+	background-color: #000;
+	color: #fff;
+	border: 3px solid #000;
 }
